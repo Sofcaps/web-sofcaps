@@ -1,0 +1,274 @@
+﻿<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+@{
+    ViewData["Title"] = "Inicio";
+}
+
+
+
+
+<!-- Barra de navegación -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/">SofCaps</a> <!-- Redirige a la página principal -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="/Registro/Registro" target="_blank">Registrarse</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#carritoModal" data-bs-toggle="modal">Carrito</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#pagoModal" data-bs-toggle="modal">Pagar</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Sección de Bienvenida -->
+<div class="welcome-section text-center mt-5 pt-5">
+    <h2>¡Bienvenido a SofCaps!</h2>
+    <p>Explora nuestra variedad de gorras.</p>
+</div>
+
+<!-- Carrusel de Imágenes -->
+<div id="capsCarousel" class="carousel slide mt-4" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="/img/gorra1.jpg" alt="Gorra 1" class="d-block mx-auto">
+        </div>
+        <div class="carousel-item">
+            <img src="/img/gorra2.jpg" alt="Gorra 2" class="d-block mx-auto">
+        </div>
+        <div class="carousel-item">
+            <img src="/img/gorra3.jpg" alt="Gorra 3" class="d-block mx-auto">
+        </div>
+    </div>
+    <!-- Controles del Carrusel -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#capsCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#capsCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+    </button>
+</div>
+
+<!-- Sección de Productos -->
+<div class="container mt-5">
+    <div class="row g-4">
+        <!-- Gorra 1 -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="/img/gorra4.jpg" class="card-img-top" alt="Gorra Azul">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Gorro 59Fifty Chicago White Sox Dotted Floral Black</h5>
+                    <p class="card-text">$150.00</p>
+                    <button class="btn btn-primary">Comprar</button>
+                </div>
+            </div>
+        </div>
+        <!-- Gorra 2 -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="/img/gorra5.jpg" class="card-img-top" alt="Gorra Negra">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Gorro 9fifty Chicago Bulls NFL Salute to Service Multicolor</h5>
+                    <p class="card-text">$155.99</p>
+                    <button class="btn btn-primary">Comprar</button>
+                </div>
+            </div>
+        </div>
+        <!-- Gorra 3 -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="/img/gorra6.jpg" class="card-img-top" alt="Gorra Roja">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Gorra Chicago Bulls NBA 9Forty Red</h5>
+                    <p class="card-text">$125.99</p>
+                    <button class="btn btn-primary">Comprar</button>
+                </div>
+            </div>
+        </div>
+               <!-- Franja Negra -->
+                        <div class="container-fluid bg-dark text-white py-5 mt-5">
+                            <div class="row align-items-center">
+                                <!-- Columna Izquierda: Imagen -->
+                                <div class="col-md-6 text-center">
+                                    <img src="/img/bienvenida.jpg" alt="Imagen Ejemplo" class="img-fluid" style="max-height: 300px;">
+                                </div>
+                <!-- Columna Derecha: Texto -->
+                <div class="col-md-6">
+                    <h2 class="mb-4">BIENVENIDOS A SOFCAPS</h2>
+                    <p>
+                        En SofCaps encontrarás la mejor selección de gorras para todos los estilos y ocasiones.
+                        Ya sea que busques un look casual, deportivo o algo más urbano, tenemos la gorra perfecta para ti.
+                        Cada una de nuestras gorras está hecha con materiales de alta calidad,
+                        ofreciendo comodidad y durabilidad para que siempre estés a la moda.
+                        ¡Explora nuestra colección y lleva tu estilo al siguiente nivel!
+                    </p>
+
+                    <!-- Imágenes con enlaces -->
+                    <div class="mt-2 d-flex gap-4">
+                        <!-- Imagen 1 -->
+                        <a href="https://www.instagram.com/newerape/" target="_blank">
+                            <img src="~/img/insta.jpg" alt="Instagram" class="icon-link">
+                        </a>
+                        <!-- Imagen 2 -->
+                        <a href="https://www.facebook.com/neweracapperu/" target="_blank">
+                            <img src="~/img/face.jpg" alt="Facebook" class="icon-link">
+                        </a>
+                    </div>
+                </div>
+
+
+                            </div>
+                        </div>
+              
+    
+
+        <!-- Gorra 4 -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="/img/gorra7.jpg" class="card-img-top" alt="Gorra Blanca">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Gorro 9Twenty Chicago White Sox Washed Denim Blue</h5>
+                    <p class="card-text">$120.00</p>
+                    <button class="btn btn-primary">Comprar</button>
+                </div>
+            </div>
+        </div>
+        <!-- Gorra 5 -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="/img/gorra8.jpg" class="card-img-top" alt="Gorra Verde">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Gorro Chicago White Sox MLB Open Misc</h5>
+                    <p class="card-text">$160.50</p>
+                    <button class="btn btn-primary">Comprar</button>
+                </div>
+            </div>
+        </div>
+        <!-- Gorra 6 -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="/img/gorra9.jpg" class="card-img-top" alt="Gorra Gris">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Gorra New York Mets MLB 59Fifty Black</h5>
+                    <p class="card-text">$148.75</p>
+                    <button class="btn btn-primary">Comprar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Franja Negra -->
+<div class="container-fluid bg-dark text-white py-5 mt-5">
+    <div class="row align-items-center">
+        <!-- Columna Izquierda: Imagen -->
+        <div class="col-md-6 text-center">
+            <img src="/img/tienda.jpg" alt="Imagen Ejemplo" class="img-fluid" style="max-height: 300px;">
+        </div>
+        <!-- Columna Derecha: Texto -->
+        <div class="col-md-6">
+            <h2 class="mb-4">CONÓCENOS</h2>
+            <p>
+                Visítanos en nuestra tienda física ubicada en Plaza San Miguel,
+                y descubre en persona todas nuestras opciones.
+                Estamos encantados de recibirte y ayudarte a encontrar la gorra ideal.
+            </p>
+            <p>
+                <strong>Plaza San Miguel</strong><br>
+                Av. La Marina, Local C117 / Primer nivel, San Miguel 15088
+            </p>
+            <p>
+               <a href="https://www.google.com/maps/place/New+Era+Store+-+Plaza+San+Miguel/-12.0761542,-77.083643,17z"
+               target="_blank"
+               class="text-info text-decoration-underline">
+               ¿Cómo llegar?
+               </a>
+
+            </p>
+        </div>
+
+    </div>
+</div>
+
+
+
+<!-- Estilos -->
+<style>
+    /* Estilos para la sección de bienvenida */
+    body {
+        background-color: #87CEFA !important; /* Color celeste */
+        margin: 0;
+        padding: 0;
+    }
+    .welcome-section {
+        text-align: center;
+        margin-top: 0px;
+        font-family: 'Arial', sans-serif;
+    }
+
+        .welcome-section h2 {
+            font-size: 3rem;
+            font-family: 'Roboto', sans-serif;
+            font-weight: bold;
+            color: #2C3E50;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+            margin-bottom: 20px;
+        }
+
+        .welcome-section p {
+            font-size: 1.5rem;
+            color: #34495E;
+            line-height: 1.5;
+        }
+
+    #capsCarousel .carousel-inner img {
+        max-height: 500px; /* Ajusta la altura máxima */
+        max-width: 100%; /* Ajusta la anchura máxima al contenedor */
+        object-fit: cover; /* Recorta las imágenes para llenar el área si es necesario */
+        margin: 0 auto; /* Centra horizontalmente */
+    }
+
+    .icon-link {
+        width: 50px; /* Ajusta el tamaño */
+        height: 50px; /* Ajusta el tamaño */
+        transition: transform 0.3s; /* Animación al pasar el cursor */
+    }
+
+        .icon-link:hover {
+            transform: scale(1.1); /* Aumenta el tamaño al pasar el cursor */
+        }
+
+
+    /* Estilos para las tarjetas */
+    .card img {
+        max-height: 200px;
+        object-fit: cover;
+    }
+
+    .card-title {
+        font-size: 1.25rem;
+        font-weight: bold;
+        color: #2C3E50;
+        margin-bottom: 10px;
+    }
+
+    .card-text {
+        font-size: 1rem;
+        color: #16A085;
+        margin-bottom: 15px;
+    }
+</style>

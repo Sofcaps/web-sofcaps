@@ -1,0 +1,35 @@
+﻿@{
+    ViewData["Title"] = "Formulario de Registro";
+}
+
+<div class="container mt-5">
+    <h2 class="text-center">Formulario de Registro</h2>
+
+    <!-- Mostrar el mensaje de éxito -->
+    @if (ViewData["Mensaje"] != null)
+    {
+        <div class="alert alert-success text-center" role="alert">
+            @ViewData["Mensaje"]
+        </div>
+    }
+
+    <form asp-action="Guardar" method="post">
+        <div class="mb-3">
+            <label for="nombres" class="form-label">Nombres</label>
+            <input type="text" id="nombres" name="Nombres" class="form-control" required>
+        </div>
+        <div class="mb-3">
+            <label for="apellidos" class="form-label">Apellidos</label>
+            <input type="text" id="apellidos" name="Apellidos" class="form-control" required>
+        </div>
+        <div class="mb-3">
+            <label for="correo" class="form-label">Correo</label>
+            <input type="email" id="correo" name="Correo" class="form-control" required>
+        </div>
+        <div class="mb-3">
+            <label for="telefono" class="form-label">Teléfono</label>
+            <input type="tel" id="telefono" name="Telefono" class="form-control" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Registrar</button>
+    </form>
+</div>
